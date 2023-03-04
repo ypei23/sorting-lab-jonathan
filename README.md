@@ -119,28 +119,28 @@ $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
 
-|                | `timsort`     | `merge_sorted`| `quick_sorted`|
-| -------------- | ------------- | ------------- | ------------- |
-| `len(xs)=2**0` |   5.30e-06    |   3.47e-06    |   3.01e-06    |
-| `len(xs)=2**1` |   2.63e-06    |   1.02e-05    |   1.22e-05    |
-| `len(xs)=2**2` |   2.63e-06    |   1.61e-05    |   1.66e-05    |
-| `len(xs)=2**3` |   3.42e-06    |   3.34e-05    |   3.75e-05    |
-| `len(xs)=2**4` |   4.50e-06    |   7.84e-05    |   6.84e-05    |
-| `len(xs)=2**5` |   7.15e-06    |   1.60e-04    |   1.73e-04    |
-| `len(xs)=2**6` |   1.47e-05    |   3.80e-04    |   4.57e-04    |
-| `len(xs)=2**7` |   3.15e-05    |   6.88e-04    |   8.99e-04    |
-| `len(xs)=2**8` |   6.67e-05    |   1.89e-03    |   2.38e-03    |
-| `len(xs)=2**9` |   1.38e-04    |   4.18e-03    |   7.09e-03    |
-| `len(xs)=2**10` |   3.10e-04    |   8.98e-03    |   1.18e-02    |
-| `len(xs)=2**11` |   6.30e-04    |   1.93e-02    |   1.76e-02    |
-| `len(xs)=2**12` |   1.49e-03    |   4.62e-02    |   5.63e-02    |
-| `len(xs)=2**13` |   3.15e-03    |   8.96e-02    |   1.03e-01    |
-| `len(xs)=2**14` |   6.87e-03    |   1.96e-01    |   2.42e-01    |
-| `len(xs)=2**15` |   1.55e-02    |   4.22e-01    |   4.84e-01    |
-| `len(xs)=2**16` |   4.02e-02    |   7.68e-01    |   1.09e+00    |
-| `len(xs)=2**17` |   8.02e-02    |   1.90e+00    |   2.37e+00    |
-| `len(xs)=2**18` |   1.80e-01    |   4.11e+00    |   5.27e+00    |
-| `len(xs)=2**19` |   4.33e-01    |   8.35e+00    |   1.09e+01    |
+<!-- add the table here -->
+|`timsort`| `merge_sorted`|`quick_sorted`|
+| -------------- | ------------------------- | --------------------- |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.01 |0.00 |
+|0.00 | 0.02 |0.01 |
+|0.00 | 0.05 |0.02 |
+|0.00 | 0.09 |0.05 |
+|0.01 | 0.20 |0.09 |
+|0.02 | 0.39 |0.20 |
+|0.04 | 0.93 |0.44 |
+
+
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
@@ -234,6 +234,25 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
+|`timsort`| `merge_sorted`|`quick_sorted`|
+| -------------- | ------------------------- | --------------------- |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.01 |0.00 |
+|0.00 | 0.00 |0.00 |
+|0.00 | 0.01 |0.00 |
+|0.00 | 0.01 |0.01 |
+|0.00 | 0.03 |0.01 |
+|0.00 | 0.07 |0.03 |
+|0.00 | 0.14 |0.06 |
+|0.00 | 0.30 |0.14 |
+|0.00 | 0.55 |0.30 |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
